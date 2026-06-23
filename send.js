@@ -15,6 +15,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// node send.js
 async function main() {
   const info = await transporter.sendMail({
     from: process.env.FROM,
